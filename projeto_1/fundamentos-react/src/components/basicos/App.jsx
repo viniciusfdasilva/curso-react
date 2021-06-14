@@ -2,18 +2,22 @@ import React from 'react';
 import ComParametro from './ComParametro'
 import Fragmento from './Fragmento'
 import Aleatorio from './Aleatorio'
+import Card from '../layout/Card'
+import '../../index.css'
 
 export default _ =>
-    <>
-        <ComParametro 
-            aluno="Pedro" 
-            nota={5.8}/>
+    <> 
+        <Card titulo='Desafio aleatorio'>
+            <Aleatorio min={1} max={60}></Aleatorio>
+        </Card>
 
-        <ComParametro 
-            aluno="Maria" 
-            nota={10}/>
 
-        <Fragmento></Fragmento>
+        <Card titulo='Fragmento'>
+            <Fragmento></Fragmento>
+        </Card>
 
-        <Aleatorio min={1} max={60}></Aleatorio>
+        <Card titulo='Com Parametro'>
+            <ComParametro aluno="Pedro" nota={5.8}/>
+            <ComParametro aluno="Maria" nota={10}/>
+        </Card>     
     </>

@@ -1,0 +1,21 @@
+.Card{
+    background-color: red;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid red;
+    margin: 15px;
+}
+
+
+.Card .title{
+    padding: 5px 0px;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.Card .content{
+    background-color: white;
+    color: #000;
+    padding: 20px;
+}

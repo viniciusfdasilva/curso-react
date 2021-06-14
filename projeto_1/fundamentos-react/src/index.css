@@ -1,3 +1,14 @@
 body{
-  background-color: gray;
+  background-color:wheat;
+  font-family: Oswald;
+  text-align: center;
+}
+
+h1, h2, h3{
+  font-weight: 200;
+}
+
+h2, h3{
+  font-weight: 200;
+  margin: 0;
 }

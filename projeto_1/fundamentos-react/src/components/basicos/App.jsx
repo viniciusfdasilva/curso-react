@@ -9,7 +9,7 @@ import '../../App.css'
 export default _ =>
     <div className='app'> 
         <div className='cards'>
-            <Card titulo='Desafio aleatorio'>
+            <Card titulo='Desafio aleatorio' color='#fa5'>
                 <Aleatorio min={1} max={60}></Aleatorio>
             </Card>
 

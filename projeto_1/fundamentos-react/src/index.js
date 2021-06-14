@@ -1,11 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Primeiro from './components/basicos/Primeiro'
+import ComParametro from './components/basicos/ComParametro'
 
 ReactDOM.render(
   <div>
-    <Primeiro></Primeiro>
-    <Primeiro></Primeiro>
+    <ComParametro 
+      aluno="Pedro" 
+      nota={5}/>
+
+    <ComParametro 
+      aluno="Maria" 
+      nota={10}/>
   </div> ,
   document.getElementById('root')
 )

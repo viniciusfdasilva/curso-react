@@ -6,7 +6,7 @@ ReactDOM.render(
   <div>
     <ComParametro 
       aluno="Pedro" 
-      nota={5}/>
+      nota={5.8}/>
 
     <ComParametro 
       aluno="Maria" 

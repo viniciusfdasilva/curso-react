@@ -6,13 +6,18 @@ import Card from '../layout/Card'
 import '../../index.css'
 import '../../App.css'
 import Familia from './Familia'
+import FamiliaMembro from './FamiliaMembro';
 
 export default _ =>
     <div className='app'> 
         <div className='cards'>
 
             <Card titulo='Componentes com filho' color='#9af'>
-                <Familia sobrenome='Ferreira'></Familia>
+                <Familia sobrenome='Ferreira'>
+                    <FamiliaMembro nome='Pedro'></FamiliaMembro>
+                    <FamiliaMembro nome='Ana'></FamiliaMembro>
+                    <FamiliaMembro nome='Gustavo'></FamiliaMembro>
+                </Familia>
             </Card>
 
 

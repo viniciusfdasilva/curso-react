@@ -8,10 +8,14 @@ import '../../App.css'
 import Familia from './Familia'
 import FamiliaMembro from './FamiliaMembro';
 import ListaAlunos from './ListaAlunos';
+import Produtos from '../repeticoes/Produtos';
 
 export default _ =>
     <div className='app'> 
         <div className='cards'>
+            <Card titulo='Desafio repetição - produtos' color='#8fb'>
+                <Produtos></Produtos>
+            </Card>
 
             <Card titulo='Aulas de repetição 01' color='#b9f'>
                 <ListaAlunos></ListaAlunos>

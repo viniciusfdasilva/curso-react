@@ -5,10 +5,17 @@ import Aleatorio from './Aleatorio'
 import Card from '../layout/Card'
 import '../../index.css'
 import '../../App.css'
+import Familia from './Familia'
 
 export default _ =>
     <div className='app'> 
         <div className='cards'>
+
+            <Card titulo='Componentes com filho' color='#9af'>
+                <Familia sobrenome='Ferreira'></Familia>
+            </Card>
+
+
             <Card titulo='Desafio aleatorio' color='#fa5'>
                 <Aleatorio min={1} max={60}></Aleatorio>
             </Card>

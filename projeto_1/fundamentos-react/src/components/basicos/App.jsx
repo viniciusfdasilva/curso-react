@@ -7,10 +7,15 @@ import '../../index.css'
 import '../../App.css'
 import Familia from './Familia'
 import FamiliaMembro from './FamiliaMembro';
+import ListaAlunos from './ListaAlunos';
 
 export default _ =>
     <div className='app'> 
         <div className='cards'>
+
+            <Card titulo='Aulas de repetição 01' color='#b9f'>
+                <ListaAlunos></ListaAlunos>
+            </Card>
 
             <Card titulo='Componentes com filho' color='#9af'>
                 <Familia sobrenome='Ferreira'>

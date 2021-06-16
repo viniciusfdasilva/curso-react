@@ -9,10 +9,14 @@ import Familia from './Familia'
 import FamiliaMembro from './FamiliaMembro';
 import ListaAlunos from './ListaAlunos';
 import Produtos from '../repeticoes/Produtos';
-
+import Parouimpar from '../condicional/Parouimpar';
 export default _ =>
     <div className='app'> 
         <div className='cards'>
+            <Card titulo='Renderização condicional' color='#fb6'>
+                <Parouimpar></Parouimpar>
+            </Card>
+            
             <Card titulo='Desafio repetição - produtos' color='#8fb'>
                 <Produtos></Produtos>
             </Card>

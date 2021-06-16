@@ -18,6 +18,7 @@ export default _ =>
             <Card titulo='Renderização condicional' color='#fb6'>
                 <Parouimpar numero={20}></Parouimpar>
                 <Usuarioinfo usuario={{nome: 'Fernando'}}/>
+                <Usuarioinfo usuario={{email: 'fernando@gmail.com'}}/>
             </Card>
             
             <Card titulo='Desafio repetição - produtos' color='#8fb'>

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import React from 'react';
 import ComParametro from './ComParametro'
 import Fragmento from './Fragmento'
@@ -6,6 +7,7 @@ import Card from '../layout/Card'
 import '../../index.css'
 import '../../App.css'
 import Familia from './Familia'
+import DiretaPai from './../comunicacao/Diretapai' 
 import FamiliaMembro from './FamiliaMembro';
 import ListaAlunos from './ListaAlunos';
 import Produtos from '../repeticoes/Produtos';
@@ -15,6 +17,10 @@ import Usuarioinfo from '../condicional/Usuarioinfo'
 export default _ =>
     <div className='app'> 
         <div className='cards'>
+            <Card titulo='Comunicação direta' color='#fb6'>
+                <DiretaPai/>
+            </Card>
+
             <Card titulo='Renderização condicional' color='#fb6'>
                 <Parouimpar numero={20}></Parouimpar>
                 <Usuarioinfo usuario={{nome: 'Fernando'}}/>

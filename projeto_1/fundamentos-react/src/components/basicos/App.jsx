@@ -13,10 +13,15 @@ import ListaAlunos from './ListaAlunos';
 import Produtos from '../repeticoes/Produtos';
 import Parouimpar from '../condicional/Parouimpar';
 import Usuarioinfo from '../condicional/Usuarioinfo'
+import IndiretaPai from './../comunicacao/IndiretaPai'
 
 export default _ =>
     <div className='app'> 
         <div className='cards'>
+            <Card titulo='Comunicação indireta' color='#fb6'>
+                <IndiretaPai/>
+            </Card>
+
             <Card titulo='Comunicação direta' color='#fb6'>
                 <DiretaPai/>
             </Card>

@@ -14,10 +14,15 @@ import Produtos from '../repeticoes/Produtos';
 import Parouimpar from '../condicional/Parouimpar';
 import Usuarioinfo from '../condicional/Usuarioinfo'
 import IndiretaPai from './../comunicacao/IndiretaPai'
+import Input from './../formulario/Input'
 
 export default _ =>
     <div className='app'> 
         <div className='cards'>
+            <Card titulo='Componente controlado' color='#fb6'>
+                <Input/>
+            </Card>
+
             <Card titulo='Comunicação indireta' color='#fb6'>
                 <IndiretaPai/>
             </Card>

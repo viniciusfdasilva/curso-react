@@ -15,10 +15,15 @@ import Parouimpar from '../condicional/Parouimpar';
 import Usuarioinfo from '../condicional/Usuarioinfo'
 import IndiretaPai from './../comunicacao/IndiretaPai'
 import Input from './../formulario/Input'
+import Contador from './../contador/Contador'
 
 export default _ =>
     <div className='app'> 
         <div className='cards'>
+            <Card titulo='Contador' color='#fb6'>
+                <Contador numero={0}/>
+            </Card>
+
             <Card titulo='Componente controlado' color='#fb6'>
                 <Input/>
             </Card>

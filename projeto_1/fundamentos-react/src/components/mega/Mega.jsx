@@ -1,4 +1,4 @@
-import React,{Component} from "react";
+import React,{Component, useState} from "react";
 import Display from "./Display"
 import Input from "./Input"
 import Button from "./Button"
@@ -10,7 +10,8 @@ class Mega extends Component{
 
         this.state = {
             numero: props.numero || 2,
-            numeros: []
+            numeros: [],
+            sorteado: 0
         }
 
         this.render(props)
@@ -25,16 +26,20 @@ class Mega extends Component{
             }
             this.state.numeros.push(number)
         }
-        console.log(parseInt(Math.random() * this.state.numero))
-        return this.state.numeros[parseInt(Math.random() * this.state.numero)]
+        this.state.sorteado = this.state.numeros[parseInt(Math.random() * this.state.numero)];
+        
+    }
+
+    setValue = (value) =>{
+        this.setState({ numero: value})
     }
 
     render = (props) =>{
     
         return(
             <div>
-                <Display/><br/>
-                <Input/><br/><br/>
+                <Display numero={this.state.sorteado}/><br/>
+                <Input getValue={this.setValue}/><br/><br/>
                 <Button click={this.sortear}/>
             </div>
         );

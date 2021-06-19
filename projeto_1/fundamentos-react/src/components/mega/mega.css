@@ -1,0 +1,19 @@
+.input-sorteador{
+    border-radius: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: tomato;
+    width: 190px;
+    height: 20px;
+}
+
+.button-sorteador{
+    border-radius: 30px;
+    background-color: tomato;
+    border-width: 2px;
+    color: white;
+    border-style: solid;
+    border-color: tomato;
+    width: 100px;
+    height: 25px;
+}

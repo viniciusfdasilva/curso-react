@@ -1,25 +1,31 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from 'react';
-import ComParametro from './ComParametro'
-import Fragmento from './Fragmento'
-import Aleatorio from './Aleatorio'
-import Card from '../layout/Card'
-import '../../index.css'
-import '../../App.css'
-import Familia from './Familia'
-import DiretaPai from './../comunicacao/Diretapai' 
-import FamiliaMembro from './FamiliaMembro';
-import ListaAlunos from './ListaAlunos';
-import Produtos from '../repeticoes/Produtos';
-import Parouimpar from '../condicional/Parouimpar';
-import Usuarioinfo from '../condicional/Usuarioinfo'
-import IndiretaPai from './../comunicacao/IndiretaPai'
-import Input from './../formulario/Input'
-import Contador from './../contador/Contador'
+import ComParametro from './basicos/ComParametro'
+import Fragmento from './basicos/Fragmento'
+import Aleatorio from './basicos/Aleatorio'
+import Card from './layout/Card'
+import '../index.css'
+import '../App.css'
+import Familia from './basicos/Familia'
+import DiretaPai from './comunicacao/Diretapai' 
+import FamiliaMembro from './basicos/FamiliaMembro';
+import ListaAlunos from './basicos/ListaAlunos';
+import Produtos from './repeticoes/Produtos';
+import Parouimpar from './condicional/Parouimpar';
+import Usuarioinfo from './condicional/Usuarioinfo'
+import IndiretaPai from './comunicacao/IndiretaPai'
+import Input from './formulario/Input'
+import Contador from './contador/Contador'
+import Mega from './mega/Mega'
 
 export default _ =>
     <div className='app'> 
         <div className='cards'>
+
+            <Card titulo='Mega Sena' color='tomato'>
+                <Mega/>
+            </Card>
+
             <Card titulo='Contador' color='#fb6'>
                 <Contador numero={0}/>
             </Card>

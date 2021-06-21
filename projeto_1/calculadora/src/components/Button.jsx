@@ -3,12 +3,12 @@ import './button.css'
 
 export default props => {
     return (
-        <button onClick={e => props.click && props.click(e.label)}
+        <button onClick={e => props.click && props.click(e.target.innerHTML)}
         className={`
             button 
             ${props.operation ? 'operation' : ''}
-            ${props.operation ? 'double' : ''}
-            ${props.operation ? 'triple' : ''}
+            ${props.double ? 'double' : ''}
+            ${props.triple ? 'triple' : ''}
         `}>
             {props.label}
         </button>

@@ -19,6 +19,9 @@ const Menu = (props) =>(
                 <li>
                     <Link to="/about">SOBRE</Link>
                 </li>
+                <li>
+                    <Link to="*">NOT FOUND</Link>
+                </li>
             </ul>
         </nav>
     </aside>

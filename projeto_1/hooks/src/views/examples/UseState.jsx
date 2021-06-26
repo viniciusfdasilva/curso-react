@@ -9,7 +9,7 @@ const UseState = (props) => {
     return (
         <div className="UseState">
             <PageTitle
-                title="Hook UseState"
+                title="Hook - UseState"
                 subtitle="Estado em componentes funcionais!"
             />
             <SectionTitle title='Exercício #01'/>

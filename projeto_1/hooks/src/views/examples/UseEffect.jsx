@@ -32,7 +32,7 @@ const UseEffect = (props) => {
             <div className="center">
                 <div>
                     <span className="text">Fatorial: </span>
-                    <span className="text red">{fatorial == -1 ? "Dado inválido" : fatorial}</span>
+                    <span className="text red">{fatorial === -1 ? "Dado inválido" : fatorial}</span>
                 </div>
 
                 <div>

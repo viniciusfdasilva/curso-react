@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PageTitle from '../../components/layout/PageTitle'
 
 const UseContext = (props) => {
@@ -8,6 +8,8 @@ const UseContext = (props) => {
                 title="Hook UseContext"
                 subtitle="Aceita um objeto de contexto e retorna o valor atual do contexto!"
             />
+
+            
         </div>
     )
 }

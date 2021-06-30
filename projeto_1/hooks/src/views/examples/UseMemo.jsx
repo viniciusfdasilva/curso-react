@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import PageTitle from '../../components/layout/PageTitle'
 
 function sum(a,b){
@@ -27,19 +27,19 @@ const UseMemo = (props) => {
                 <input type="number" 
                         className="input" 
                         value={n1} 
-                        onChange={e => setN1(parseInt(e.target.value == "" ? 0 : e.target.value))}
+                        onChange={e => setN1(parseInt(e.target.value === "" ? 0 : e.target.value))}
                 />
 
                 <input type="number" 
                         className="input" 
                         value={n2} 
-                        onChange={e => setN2(parseInt(e.target.value == "" ? 0 : e.target.value))}
+                        onChange={e => setN2(parseInt(e.target.value === "" ? 0 : e.target.value))}
                 />
 
                 <input type="number" 
                         className="input" 
                         value={n3} 
-                        onChange={e => setN3(parseInt(e.target.value == "" ? 0 : e.target.value))}
+                        onChange={e => setN3(parseInt(e.target.value === "" ? 0 : e.target.value))}
                 />
 
                 <span className="text" type="number">{result}</span>

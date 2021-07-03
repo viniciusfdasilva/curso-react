@@ -2,7 +2,7 @@ import React from 'react'
 import PageTitle from '../../components/layout/PageTitle'
 
 const UseReducer = (props) => {
-    const teste
+
     return (
         <div className="UseReducer">
             <PageTitle

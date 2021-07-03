@@ -1,34 +1,15 @@
 import './App.css';
+import React from 'react'
+import Cart from './components/Cart'
 
 function App() {
   return (
-    <html>
-      <body>
-        <div className="App">
-          <h1>Checkbox Customizado</h1>
-
-          <label class="container">Um
-            <input type="checkbox"/>
-            <span class="checkmark"></span>
-          </label>
-
-          <label class="container">Dois
-            <input type="checkbox"/>
-            <span class="checkmark"></span>
-          </label>
-
-          <label class="container">Três
-            <input type="checkbox"/>
-            <span class="checkmark"></span>
-          </label>
-
-          <label class="container">Quatro
-            <input type="checkbox"/>
-            <span class="checkmark"></span>
-          </label>
-        </div>
-      </body>
-    </html>
+    <div className="main">
+      <Cart borderColor='#A52A2A' backgroundColor='#FA8072'/>
+      <Cart borderColor='#2E8B57' backgroundColor='#E0FFFF'/>
+      <Cart borderColor='#8B008B' backgroundColor='#DDA0DD'/>
+      <Cart borderColor='#191970' backgroundColor='#836FFF'/>
+    </div>
   );
 }
 

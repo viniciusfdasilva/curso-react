@@ -9,6 +9,7 @@ function App() {
       <Cart borderColor='#2E8B57' backgroundColor='#E0FFFF'/>
       <Cart borderColor='#8B008B' backgroundColor='#DDA0DD'/>
       <Cart borderColor='#191970' backgroundColor='#836FFF'/>
+      <Cart borderColor='#191970' backgroundColor='#836FFF'/>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <>
-		Exercicios de React;     
+		Exercicios de React     
     </>    
   );
 }

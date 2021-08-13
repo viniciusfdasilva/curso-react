@@ -3,7 +3,8 @@ import React from 'react'
 import Cart from './components/Cart'
 
 function App() {
-  return (
+
+return (
     <div className="main">
       <Cart borderColor='#A52A2A' backgroundColor='#FA8072'/>
       <Cart borderColor='#2E8B57' backgroundColor='#E0FFFF'/>
